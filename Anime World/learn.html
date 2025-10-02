@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learn JavaScript | Anime World</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: #fffafc;
+      color: #444;
+      font-family: "Poppins", sans-serif;
+    }
+    .section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2.3rem;
+      color: #ff7aa2;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 30px;
+      color: #555;
+    }
+    .example {
+      background: #ffeaf2;
+      padding: 20px;
+      border-radius: 20px;
+      margin: 20px auto;
+      max-width: 700px;
+      box-shadow: 0 6px 12px rgba(255,182,193,0.25);
+      transition: transform 0.3s ease;
+    }
+    .example:hover {
+      transform: translateY(-5px);
+    }
+    h3 {
+      color: #ff4d79;
+      margin-bottom: 10px;
+    }
+    code {
+      display: block;
+      background: #fff;
+      border-radius: 10px;
+      padding: 12px;
+      margin: 10px 0;
+      font-size: 0.95rem;
+      text-align: left;
+      color: #333;
+      border: 2px dashed #ffc1d6;
+      white-space: pre-wrap;
+    }
+    .output {
+      background: #fff;
+      border-radius: 12px;
+      padding: 12px;
+      margin-top: 10px;
+      border-left: 5px solid #ff7aa2;
+      font-family: monospace;
+      text-align: left;
+      white-space: pre-wrap;
+      min-height: 28px;
+    }
+    button {
+      padding: 10px 18px;
+      margin-top: 10px;
+      background: #ff7aa2;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #ff4d79;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Anime World</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Anime</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="watch.html">Watch Now</a></li>
+        <li><a href="learn.html" class="active">Learn JS</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="section">
+    <h2>🌸 Learn JavaScript! 🌸</h2>
+    <p>Click the 💖 button! (づ｡◕‿‿◕｡)づ</p>
+
+    <!-- VARIABLES -->
+    <h3>1. Variables</h3>
+    <div class="example">
+      <code>let anime = "Naruto"; <br>console.log("My favorite anime is " + anime);</code><br>
+      <button onclick="runVariables()">Run Example</button>
+      <div id="output1" class="output"></div>
+    </div>
+
+    <!-- OPERATORS -->
+    <h3>2. Operators</h3>
+    <div class="example">
+      <code>let x = 10, y = 5; <br>console.log("x + y = " + (x + y));</code><br>
+      <button onclick="runOperators()">Run Example</button>
+      <div id="output2" class="output"></div>
+    </div>
+
+    <!-- CONDITIONALS -->
+    <h3>3. Conditional Statements</h3>
+    <div class="example">
+      <code>let anime = "One Piece"; <br>if(anime==="One Piece"){ console.log("Pirate Adventure!"); }</code><br>
+      <button onclick="runConditionals()">Run Example</button>
+      <div id="output3" class="output"></div>
+    </div>
+
+    <!-- LOOPS -->
+    <h3>4. Loops</h3>
+    <div class="example">
+      <code>for(let i=1; i<=10; i++){ console.log("Episode " + i); }</code><br>
+      <button onclick="runLoops()">Run Example</button>
+      <div id="output4" class="output"></div>
+    </div>
+
+    <!-- STRINGS -->
+    <h3>5. Strings</h3>
+    <div class="example">
+      <code>let title = "Demon Slayer"; <br>console.log("Anime: " + title.toUpperCase());</code><br>
+      <button onclick="runStrings()">Run Example</button>
+      <div id="output5" class="output"></div>
+    </div>
+
+    <!-- FUNCTIONS -->
+    <h3>6. Functions</h3>
+    <div class="example">
+      <code>function greet(name){ return "Hello " + name; } <br>console.log(greet("Sakura"));</code><br>
+      <button onclick="runFunctions()">Run Example</button>
+      <div id="output6" class="output"></div>
+    </div>
+
+    <!-- OBJECTS -->
+    <h3>7. Objects</h3>
+    <div class="example">
+      <code>let animeChar = {name: "Luffy", crew: "Straw Hats"};<br>console.log(animeChar.name + " leads " + animeChar.crew);</code><br>
+      <button onclick="runObjects()">Run Example</button>
+      <div id="output7" class="output"></div>
+    </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Anime World | Learn JS 🌸</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    function runVariables(){
+      let anime = "Naruto";
+      document.getElementById("output1").innerText = "My favorite anime is " + anime;
+    }
+  </script>
+
+  <script>
+    function runOperators(){
+      let x = 10, y = 5;
+      document.getElementById("output2").innerText = "x + y = " + (x + y);
+    }
+  </script>
+
+  <script>
+    function runConditionals(){
+      let anime = "One Piece";
+      let result = (anime === "One Piece") ? "Pirate Adventure!" : "Another Anime";
+      document.getElementById("output3").innerText = result;
+    }
+  </script>
+
+  <script>
+    function runLoops(){
+      let result = "";
+      for(let i=1; i<=10; i++){ result += "Episode " + i + "\n"; }
+      document.getElementById("output4").innerText = result;
+    }
+  </script>
+
+  <script>
+    function runStrings(){
+      let title = "Demon Slayer";
+      document.getElementById("output5").innerText = "Anime: " + title.toUpperCase();
+    }
+  </script>
+
+  <script>
+    function runFunctions(){
+      function greet(name){ return "Hello " + name; }
+      document.getElementById("output6").innerText = greet("Sakura");
+    }
+  </script>
+
+  <script>
+    function runObjects(){
+      let animeChar = {name: "Luffy", crew: "Straw Hats"};
+      document.getElementById("output7").innerText = animeChar.name + " leads " + animeChar.crew;
+    }
+  </script>
+
+</body>
+</html>
